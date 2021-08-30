@@ -2,13 +2,13 @@
 
 .cv-content--right {
     padding-top: 20px;
-    background-color: #d7eaee;
+    background-color: #e2e1fe7a;
 }
 
 .cv-content--left {
     flex: 0 0 235px;
     padding: 15px 10px 0;
-    background-color: #002C5F;
+    background-color: #04005f;
     color: #fff;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .cv-social--item:hover {
-    background-color: #002c5f;
+    background-color: #04005f;
 }
 
 /*# sourceMappingURL=main.f8f9c7b8.chunk.css.map */
