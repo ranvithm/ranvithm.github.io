@@ -8,7 +8,7 @@
 .cv-content--left {
     flex: 0 0 235px;
     padding: 15px 10px 0;
-    background-color: #04005f;
+    background-color: #002c5f;
     color: #fff;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .cv-social--item:hover {
-    background-color: #04005f;
+    background-color: #002c5f;
 }
 
 /*# sourceMappingURL=main.f8f9c7b8.chunk.css.map */
