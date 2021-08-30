@@ -1,2 +1,24 @@
 .cv-container.CVSingle{background-color:#fff;box-shadow:0 2px 5px 0 #555353,0 2px 10px 0 #646161}.cv-content--left{flex:0 0 235px;padding:15px 10px 0;background-color:#27187e;color:#fff}.cv-head{flex:0 0 230px}.cv-profile{height:150px;width:150px;border:7px solid #fff;border-radius:50%}.cv-cont-item--icon,.cv-social--item{height:30px;width:30px;display:flex;align-items:center;justify-content:center;font-size:15px;border-radius:50%;border:.5px solid #ddd}.cv-contact--item{flex:0 0 40px}.cv-cont-item--value{margin-left:10px;width:calc(100% - 42px)}.cv-contact--item a,.cv-menu--title a,.cv-social--item a{text-decoration:none;color:#555}.cv-menu--content ul{margin:0}.cv-contact--item:hover a,.cv-menu--title:hover a,.cv-social--item:hover a{text-decoration:underline;color:#1f86e7}.cv-menu{padding:0 10px;text-align:justify}.cv-designation,.cv-h1,.cv-head--title,.cv-menu--title,.cv-name{margin:0}.cv-menu--item{flex:auto}.cv-content--right{padding-top:20px;background-color:#e3f2fd}.icon--disable{color:#eee;opacity:.2}.cv-cont-item--value{flex:1 1}.cv-cont-item--value .fa{font-size:13px}.cv-menu--item{margin-bottom:10px}.cv-social--list{flex:0 0 60px}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}::-webkit-scrollbar-thumb{background:#8a8a8a;border-radius:10px}::-webkit-scrollbar{width:5px;height:5px}#root,.App{height:100vh;width:100vw;padding:0;margin:0;overflow-y:auto;overflow-x:hidden;font-family:"Source Sans Pro";color:#555}.cv-container{height:auto;width:750px;margin:auto;border-radius:4px}.main--head{height:40vh;background-color:#21587f}.main--body,.main--head{width:100vw;position:absolute;z-index:-1}.main--body{height:60vh;top:40vh;background-color:#dedede}.mt-10{margin-top:10px}.mlr-10{margin:0 15px}.font-cap{text-transform:capitalize}.cv-divider{height:2.5px;background-color:#d0d0d0}.r-flex{display:flex}.r-flex--full{flex:1 1}.r-flex--col{flex-direction:column}.r-flex-align--center{align-items:center}.r-flex-just--center{justify-content:center}.r-flex-just--around{justify-content:space-around}.cv-contact--list a{color:#fff}
+
+.cv-content--right {
+    padding-top: 20px;
+    background-color: #d7eaee;
+}
+
+.cv-content--left {
+    flex: 0 0 235px;
+    padding: 15px 10px 0;
+    background-color: #002C5F;
+    color: #fff;
+}
+
+.cv-contact--item:hover a, .cv-menu--title:hover a, .cv-social--item:hover a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.cv-social--item:hover {
+    background-color: #002c5f;
+}
+
 /*# sourceMappingURL=main.f8f9c7b8.chunk.css.map */
