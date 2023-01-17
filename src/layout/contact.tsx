@@ -38,7 +38,7 @@ const Contact = () => {
            <TextareaAutosize placeholder='Your Message' style={{width: '100%'}} minRows={6} />
           </Box>
           <Box>
-           <Button variant='contained'>Contained</Button>
+           <Button variant='contained'>Send</Button>
           </Box>
          </Box>
         </CardContent>

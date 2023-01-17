@@ -39,7 +39,7 @@ const About = () => {
             AGE:
            </Typography>
            <Typography variant='body1' flex='2' display='block' gutterBottom>
-            27
+            29
            </Typography>
           </Box>
           <Box display='flex' alignItems='center'>

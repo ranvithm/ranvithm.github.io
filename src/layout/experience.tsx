@@ -24,14 +24,46 @@ const Experience = () => {
        <Card>
         <CardContent>
          <Typography gutterBottom variant='h6' component='div'>
-          QAP (Qlik Analytics Platform) - Junior Developer
+          Anywhere Embed Website - Full Stack Senior Developer
          </Typography>
          <Typography gutterBottom variant='overline' component='div'>
-          Aug 2016 - May 2017
+          Nov 2022 - Present
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          Developed the platform for building rich and smart data-driven analytic analytic applications. Which extends
-          the Qlik Sense functionality with the help of Qlik sense API by using ReactJS and Python flask.
+          Bring KPI's from multiple Qlik apps, to integrate into Website.
+         </Typography>
+        </CardContent>
+       </Card>
+      </CustomizedTimeline>
+      <CustomizedTimeline>
+       <Card>
+        <CardContent>
+         <Typography gutterBottom variant='h6' component='div'>
+          InfoXD - Senior Developer
+         </Typography>
+         <Typography gutterBottom variant='overline' component='div'>
+          Jan 2020 - Oct 2022
+         </Typography>
+         <Typography variant='body1' color='text.secondary'>
+          Developed the self service No Code UI Platform. Bring KPI's from multiple Qlik apps without the know-how of
+          the underlying data sources and define access controls on your views.
+         </Typography>
+        </CardContent>
+       </Card>
+      </CustomizedTimeline>
+      <CustomizedTimeline>
+       <Card>
+        <CardContent>
+         <Typography gutterBottom variant='h6' component='div'>
+          Business CRM - Developer
+         </Typography>
+         <Typography gutterBottom variant='overline' component='div'>
+          Jun 2018 - Dec 2019
+         </Typography>
+         <Typography variant='body1' color='text.secondary'>
+          Developed a business CRM tool which is used to manage the process of overseeing and directing future sales in
+          various stages. Also, the developer performance can be analyzed based on the project process. Developed using
+          Angular & NodeJS. This can be migrated to Meteor framework.
          </Typography>
         </CardContent>
        </Card>
@@ -105,46 +137,14 @@ const Experience = () => {
        <Card>
         <CardContent>
          <Typography gutterBottom variant='h6' component='div'>
-          Business CRM - Developer
+          QAP (Qlik Analytics Platform) - Junior Developer
          </Typography>
          <Typography gutterBottom variant='overline' component='div'>
-          Jun 2018 - Dec 2019
+          Aug 2016 - May 2017
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          Developed a business CRM tool which is used to manage the process of overseeing and directing future sales in
-          various stages. Also, the developer performance can be analyzed based on the project process. Developed using
-          Angular & NodeJS. This can be migrated to Meteor framework.
-         </Typography>
-        </CardContent>
-       </Card>
-      </CustomizedTimeline>
-      <CustomizedTimeline>
-       <Card>
-        <CardContent>
-         <Typography gutterBottom variant='h6' component='div'>
-          InfoXD - Senior Developer
-         </Typography>
-         <Typography gutterBottom variant='overline' component='div'>
-          Jan 2020 - Oct 2022
-         </Typography>
-         <Typography variant='body1' color='text.secondary'>
-          Developed the self service No Code UI Platform. Bring KPI's from multiple Qlik apps without the know-how of
-          the underlying data sources and define access controls on your views.
-         </Typography>
-        </CardContent>
-       </Card>
-      </CustomizedTimeline>
-      <CustomizedTimeline>
-       <Card>
-        <CardContent>
-         <Typography gutterBottom variant='h6' component='div'>
-          Anywhere Embed Website - Full Stack Senior Developer
-         </Typography>
-         <Typography gutterBottom variant='overline' component='div'>
-          Nov 2022 - Present
-         </Typography>
-         <Typography variant='body1' color='text.secondary'>
-          Bring KPI's from multiple Qlik apps, to integrate into Website.
+          Developed the platform for building rich and smart data-driven analytic analytic applications. Which extends
+          the Qlik Sense functionality with the help of Qlik sense API by using ReactJS and Python flask.
          </Typography>
         </CardContent>
        </Card>
