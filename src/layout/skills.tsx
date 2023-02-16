@@ -13,15 +13,17 @@ const Skills = () => {
       p: 2,
       margin: 'auto',
       flexGrow: 1,
-      backgroundColor: '#fff',
+      backgroundColor: (theme) => theme.palette.primary.contrastText,
      }}>
      <Grid container spacing={1}>
       <Grid item xs={12} md={6}>
        <Card variant='outlined' sx={{border: 0}}>
         <CardContent>
-         <LinearDeterminate name='HTML' value={80} />
-         <LinearDeterminate name='Javascript' value={75} />
-         <LinearDeterminate name='Angular' value={60} />
+         <LinearDeterminate name='HTML' value={85} />
+         <LinearDeterminate name='Javascript' value={80} />
+         <LinearDeterminate name='Typescript' value={75} />
+         <LinearDeterminate name='Nextjs' value={75} />
+         <LinearDeterminate name='Angular' value={70} />
          <LinearDeterminate name='Qlik Extension' value={80} />
         </CardContent>
        </Card>
@@ -29,10 +31,12 @@ const Skills = () => {
       <Grid item xs={12} md={6}>
        <Card variant='outlined' sx={{border: 0}}>
         <CardContent>
-         <LinearDeterminate name='CSS' value={70} />
-         <LinearDeterminate name='React' value={80} />
-         <LinearDeterminate name='Node' value={75} />
+         <LinearDeterminate name='CSS' value={80} />
+         <LinearDeterminate name='React' value={85} />
+         <LinearDeterminate name='Node' value={80} />
+         <LinearDeterminate name='nestjs' value={70} />
          <LinearDeterminate name='Qlik Mashup' value={85} />
+         <LinearDeterminate name='Qlik Webapp' value={85} />
         </CardContent>
        </Card>
       </Grid>

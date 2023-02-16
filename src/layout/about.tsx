@@ -9,7 +9,7 @@ const About = () => {
       p: 2,
       margin: 'auto',
       flexGrow: 1,
-      backgroundColor: '#fff',
+      backgroundColor: (theme) => theme.palette.primary.contrastText,
      }}>
      <Grid container spacing={1}>
       <Grid item xs={12} md={6}>

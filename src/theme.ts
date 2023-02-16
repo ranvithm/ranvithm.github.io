@@ -4,8 +4,8 @@ import '@mui/lab/themeAugmentation'
 const theme = createTheme({
  palette: {
   primary: {
-   main: '#FE8B5E',
-   contrastText: '#fff',
+   main: '#144272',
+   contrastText: '#FFE7CC',
   },
  },
  //  components: {

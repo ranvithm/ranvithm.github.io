@@ -1,7 +1,5 @@
 import {useState, useEffect} from 'react'
 import {AppBar, Box, Container, Toolbar} from '@mui/material'
-import Menu from '@mui/material/Menu/Menu'
-import MenuItem from '@mui/material/MenuItem/MenuItem'
 import Typography from '@mui/material/Typography'
 import ListItem from '@mui/material/ListItem/ListItem'
 import List from '@mui/material/List/List'
@@ -20,12 +18,14 @@ const Header = () => {
 
  return (
   <Box sx={{flexGrow: 1}}>
-   <AppBar sx={{backgroundColor: offset > 400 ? '' : 'transparent', color: '#fff'}} component='nav'>
+   <AppBar
+    sx={{backgroundColor: offset > 400 ? '' : 'transparent', color: (theme) => theme.palette.primary.contrastText}}
+    component='nav'>
     <Container sx={{width: '100vw'}} fixed>
      <Toolbar>
       <Box display='flex' justifyContent='space-between' width='100%'>
        <Box display='flex' alignItems='center'>
-        Ranjithkumar M
+        <Typography variant='h5'>Ranjithkumar M</Typography>
        </Box>
        <Box component='nav' display='flex' gap='10px'>
         <List sx={{display: {xs: 'none', md: 'flex'}}} disablePadding>

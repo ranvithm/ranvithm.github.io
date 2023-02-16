@@ -1,5 +1,5 @@
 import {Timeline} from '@mui/lab'
-import {Box, Container, Grid, Paper, Card, CardContent, Typography, LinearProgress, styled} from '@mui/material'
+import {Box, Container, Paper, Card, CardContent, Typography} from '@mui/material'
 import CustomizedTimeline from '../components/timeline'
 
 const Library = () => {
@@ -14,18 +14,23 @@ const Library = () => {
       p: 2,
       margin: 'auto',
       flexGrow: 1,
-      backgroundColor: '#fff',
+      backgroundColor: (theme) => theme.palette.primary.contrastText,
      }}>
      <Timeline>
       <CustomizedTimeline>
        <Card>
         <CardContent>
-         <Typography gutterBottom variant='h6' component='div'>
-          TS-Qlik
+         <Typography
+          variant='h6'
+          component='a'
+          sx={{textDecoration: 'blink'}}
+          href='https://www.npmjs.com/package/qlik'>
+          Qlik
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          Using this package, Easily we can connect and Can be embed Qlik sense apps into web applications or web sites.
-          We can use typescript (angular) project also.
+          This package will serve as a web application wrapper for the Qlik API. This utility manages the Qlik
+          connection, loads the required files, and retrieves the fundamental Qlik operations. And by connecting the
+          Qlik sense numerous apps with this tool, we may access the Qlik sense API.
          </Typography>
         </CardContent>
        </Card>

@@ -1,30 +1,17 @@
 import {Box, Container, Avatar, Button, IconButton, SvgIcon, styled} from '@mui/material'
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import {faNPM} from '@fortawesome/free-solid-svg-icons'
 import './style.css'
 
 const ImageButton = styled(IconButton)(({theme}) => ({
  backgroundColor: '#888',
- color: '#fff',
+ color: theme.palette.primary.contrastText,
  '&:hover': {
   backgroundColor: theme.palette.primary.main,
  },
 }))
 
 const Main = () => {
- const backgroundStyle = {
-  backgroundImage: "url('./cover.jpg') ",
-  backgroundRepeat: 'no-repeat',
-  position: 'absolute',
-  backgroundSize: 'cover',
-  width: '100%',
-  height: '100%',
-  zIndex: '-1',
-  backgroundPosition: 'center center',
- }
  return (
   <Box className='page--header'>
-   <Box sx={backgroundStyle}></Box>
    <Container
     sx={{
      width: '100vw',
@@ -44,7 +31,7 @@ const Main = () => {
       top: '50%',
       left: '50%',
       width: '100%',
-      color: '#FFFFFF',
+      color: (theme) => theme.palette.primary.contrastText,
       padding: '0 15px',
       maxWidth: '880px',
       position: 'absolute',
