@@ -18,9 +18,7 @@ const Header = () => {
 
  return (
   <Box sx={{flexGrow: 1}}>
-   <AppBar
-    sx={{backgroundColor: offset > 400 ? '' : 'transparent', color: (theme) => theme.palette.primary.contrastText}}
-    component='nav'>
+   <AppBar sx={{backgroundColor: offset > 400 ? '' : 'transparent', color: (theme) => theme.palette.primary.contrastText}} component='nav'>
     <Container sx={{width: '100vw'}} fixed>
      <Toolbar>
       <Box display='flex' justifyContent='space-between' width='100%'>

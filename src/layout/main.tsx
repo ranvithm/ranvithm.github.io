@@ -2,10 +2,11 @@ import {Box, Container, Avatar, Button, IconButton, SvgIcon, styled} from '@mui/
 import './style.css'
 
 const ImageButton = styled(IconButton)(({theme}) => ({
- backgroundColor: '#888',
- color: theme.palette.primary.contrastText,
+ backgroundColor: theme.palette.primary.contrastText,
+ color: '#888',
  '&:hover': {
   backgroundColor: theme.palette.primary.main,
+  color: theme.palette.primary.contrastText,
  },
 }))
 

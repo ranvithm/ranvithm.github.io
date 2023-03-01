@@ -19,10 +19,9 @@ const About = () => {
           About
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          Passionate Full Stack Developer with 6+ years of hands-on experience designing, developing and maintaining web
-          applications. Possesses diverse experience of creating mashup and extensions using different tech stacks.
-          Adept at understanding the requirements of the clients and delivering the projects accordingly. Highly skilled
-          at collaborating with team members to ship beautiful products within deadlines.
+          Passionate Full Stack Developer with 6+ years of hands-on experience designing, developing and maintaining web applications. Possesses diverse experience of creating
+          mashup and extensions using different tech stacks. Adept at understanding the requirements of the clients and delivering the projects accordingly. Highly skilled at
+          collaborating with team members to ship beautiful products within deadlines.
          </Typography>
         </CardContent>
        </Card>

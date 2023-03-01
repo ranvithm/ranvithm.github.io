@@ -30,9 +30,8 @@ const Experience = () => {
           Nov 2022 - Present
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          This is package embedding. The qlik sense app may be integrated into a variety of other websites or online
-          environments. They enable its clients to include analytics information, including as reports, dashboards, and
-          other materials, into their own websites, applications, and other platforms.
+          This is package embedding. The qlik sense app may be integrated into a variety of other websites or online environments. They enable its clients to include analytics
+          information, including as reports, dashboards, and other materials, into their own websites, applications, and other platforms.
          </Typography>
         </CardContent>
        </Card>
@@ -53,22 +52,19 @@ const Experience = () => {
           <Typography variant='button' sx={{mr: 2}} component='span'>
            CREATE:
           </Typography>
-          Accelerate custom dashboard creation by collating KPIs from across Qlik Sense apps and organizing them for
-          user-specific needs
+          Accelerate custom dashboard creation by collating KPIs from across Qlik Sense apps and organizing them for user-specific needs
          </Typography>
          <Typography color='text.secondary' variant='body1' component='p' sx={{mb: 1}}>
           <Typography variant='button' sx={{mr: 2}} component='span'>
            CUTOMIZE:
           </Typography>
-          Govern the dashboarding process at most granular levels to create a unified, seamless experience for both
-          internal and external users
+          Govern the dashboarding process at most granular levels to create a unified, seamless experience for both internal and external users
          </Typography>
          <Typography color='text.secondary' variant='body1' component='p' sx={{mb: 1}}>
           <Typography variant='button' sx={{mr: 2}} component='span'>
            COLLABORATE:
           </Typography>
-          Trigger conversations around data as and when you need to. Make the discovery process collaborative at every
-          step, without having to wait for apps to be published
+          Trigger conversations around data as and when you need to. Make the discovery process collaborative at every step, without having to wait for apps to be published
          </Typography>
         </CardContent>
        </Card>
@@ -83,11 +79,10 @@ const Experience = () => {
           Jun 2018 - Dec 2019
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          We used meteor to construct the CRM tool. From lead generation to opportunity management to deal closure, it
-          enables firms to monitor and manage their sales funnel. Businesses may build and carry out personalized
-          marketing campaigns to contact potential consumers at the correct time and with the right message with the aid
-          of marketing automation solutions. It assists companies in providing exceptional customer service by tracking
-          and promptly and effectively addressing client complaints and requests.
+          We used meteor to construct the CRM tool. From lead generation to opportunity management to deal closure, it enables firms to monitor and manage their sales funnel.
+          Businesses may build and carry out personalized marketing campaigns to contact potential consumers at the correct time and with the right message with the aid of
+          marketing automation solutions. It assists companies in providing exceptional customer service by tracking and promptly and effectively addressing client complaints and
+          requests.
          </Typography>
         </CardContent>
        </Card>
@@ -167,10 +162,9 @@ const Experience = () => {
           Aug 2016 - May 2017
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          With the aid of a QAP License, we are developing a QAP Add on platform that will increase Qlik Sense's
-          capability. The platform provides a range of dashboard creation and data visualization features. By adopting
-          an associative data architecture that enables people to explore data in a flexible and natural manner, it
-          makes it easier to detect trends, patterns, and insights.
+          With the aid of a QAP License, we are developing a QAP Add on platform that will increase Qlik Sense's capability. The platform provides a range of dashboard creation and
+          data visualization features. By adopting an associative data architecture that enables people to explore data in a flexible and natural manner, it makes it easier to
+          detect trends, patterns, and insights.
          </Typography>
         </CardContent>
        </Card>

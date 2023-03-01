@@ -1,7 +1,11 @@
 :root {
- --color: #FFE7CC;
+ --color: #f5f9ff;
  --gradient-start: #2c74b3;
  --gradient-end: #205295;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
 .page--header {

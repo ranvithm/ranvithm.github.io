@@ -18,7 +18,7 @@ const Contact = () => {
  }
 
  const submitFn = async () => {
-  const response = await fetch('http://localhost:5000/mail', {
+  const response = await fetch('https://mail-ranjithm.vercel.app/sendmail', {
    method: 'POST',
    mode: 'cors',
    cache: 'no-cache',
@@ -31,6 +31,11 @@ const Contact = () => {
    body: JSON.stringify(contact),
   })
   console.log(response)
+  setContactInfo({
+   name: '',
+   mailId: '',
+   message: '',
+  })
  }
 
  return (
@@ -52,36 +57,13 @@ const Contact = () => {
         <CardContent>
          <Box component='form' display='flex' gap='20px' flexDirection='column'>
           <Box display='flex' gap='20px' justifyContent='space-between'>
-           <TextField
-            size='small'
-            name='name'
-            value={contact?.name}
-            onChange={handleChange}
-            label='Contact Name'
-            fullWidth
-           />
-           <TextField
-            size='small'
-            name='mailId'
-            value={contact?.mailId}
-            onChange={handleChange}
-            label='Contact E-mail'
-            fullWidth
-           />
+           <TextField size='small' name='name' value={contact?.name} onChange={handleChange} label='Contact Name' fullWidth />
+           <TextField size='small' name='mailId' value={contact?.mailId} onChange={handleChange} label='Contact E-mail' fullWidth />
           </Box>
           <Box>
-           <TextField
-            size='small'
-            name='message'
-            value={contact?.message}
-            onChange={handleChange}
-            label='Message'
-            fullWidth
-            multiline
-            minRows={4}
-           />
+           <TextField size='small' name='message' value={contact?.message} onChange={handleChange} label='Message' fullWidth multiline minRows={4} />
           </Box>
-          <Box>
+          <Box display='flex' justifyContent='flex-end'>
            <Button onClick={submitFn} variant='contained'>
             Send
            </Button>
