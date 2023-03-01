@@ -20,14 +20,9 @@ const Contact = () => {
  const submitFn = async () => {
   const response = await fetch('https://mail-ranjithm.vercel.app/sendmail', {
    method: 'POST',
-   mode: 'cors',
-   cache: 'no-cache',
-   credentials: 'same-origin',
    headers: {
     'Content-Type': 'application/json',
    },
-   redirect: 'follow',
-   referrerPolicy: 'no-referrer',
    body: JSON.stringify(contact),
   })
   console.log(response)
