@@ -1,4 +1,4 @@
-import {Box, Container, Grid, Paper, Card, CardContent, Typography, TextField, Button} from '@mui/material'
+import {Box, Container, Grid, Paper, Card, CardContent, Typography, TextField, Button, Snackbar} from '@mui/material'
 import {ChangeEvent, useState} from 'react'
 
 interface IContactInfo {
@@ -7,8 +7,11 @@ interface IContactInfo {
  message?: string
 }
 
+const validMail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
 const Contact = () => {
  const [contact, setContactInfo] = useState<IContactInfo>()
+ const [showToaster, setShowToaster] = useState<boolean>(false)
 
  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
   const {name, value} = e.currentTarget
@@ -18,19 +21,25 @@ const Contact = () => {
  }
 
  const submitFn = async () => {
-  const response = await fetch('https://mail-ranjithm.vercel.app/sendmail', {
-   method: 'POST',
-   headers: {
-    'Content-Type': 'application/json',
-   },
-   body: JSON.stringify(contact),
-  })
-  console.log(response)
-  setContactInfo({
-   name: '',
-   mailId: '',
-   message: '',
-  })
+  if (contact?.name && contact?.message && contact?.mailId && contact.mailId.match(validMail)) {
+   await fetch('https://mail-ranjithm.vercel.app/sendmail', {
+    method: 'POST',
+    headers: {
+     'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(contact),
+   })
+   setShowToaster(true)
+
+   setContactInfo({
+    name: '',
+    mailId: '',
+    message: '',
+   })
+   setTimeout(() => {
+    setShowToaster(false)
+   }, 3000)
+  }
  }
 
  return (
@@ -59,8 +68,8 @@ const Contact = () => {
            <TextField size='small' name='message' value={contact?.message} onChange={handleChange} label='Message' fullWidth multiline minRows={4} />
           </Box>
           <Box display='flex' justifyContent='flex-end'>
-           <Button onClick={submitFn} variant='contained'>
-            Send
+           <Button disabled={!(contact?.name && contact?.message && contact?.mailId && contact.mailId.match(validMail))} onClick={submitFn} variant='contained'>
+            Contact
            </Button>
           </Box>
          </Box>
@@ -102,6 +111,11 @@ const Contact = () => {
      </Grid>
     </Paper>
    </Container>
+   <Snackbar
+    anchorOrigin={{vertical: 'bottom', horizontal: 'right'}}
+    open={showToaster}
+    message={`I appreciate you contacting me. I'll get back to you about your message soon.`}
+   />
   </Box>
  )
 }

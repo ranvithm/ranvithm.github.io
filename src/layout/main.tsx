@@ -6,7 +6,7 @@ const ImageButton = styled(IconButton)(({theme}) => ({
  color: '#888',
  '&:hover': {
   backgroundColor: theme.palette.primary.main,
-  color: theme.palette.primary.contrastText,
+  color: '#fff',
  },
 }))
 
