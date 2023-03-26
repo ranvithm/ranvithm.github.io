@@ -1,9 +1,9 @@
-import {Box, Container, Grid, Paper, Card, CardContent, Typography} from '@mui/material'
-import LinearDeterminate from '../components/linearDeterminate'
+import {Box, Container, Grid, Paper, Typography, SvgIcon} from '@mui/material'
+import SkillsList from '../components/skills'
 
 const Skills = () => {
  return (
-  <Box component='section' id='skill' m='50px 0'>
+  <Box component='section' id='skill' pt='65px'>
    <Container fixed>
     <Typography variant='h5' sx={{textAlign: 'center'}} gutterBottom>
      Professional Skills
@@ -15,31 +15,29 @@ const Skills = () => {
       flexGrow: 1,
       backgroundColor: (theme) => theme.palette.primary.contrastText,
      }}>
-     <Grid container spacing={1}>
-      <Grid item xs={12} md={6}>
-       <Card variant='outlined' sx={{border: 0}}>
-        <CardContent>
-         <LinearDeterminate name='HTML' value={85} />
-         <LinearDeterminate name='Javascript' value={80} />
-         <LinearDeterminate name='Typescript' value={75} />
-         <LinearDeterminate name='Nextjs' value={75} />
-         <LinearDeterminate name='Angular' value={70} />
-         <LinearDeterminate name='Qlik Extension' value={80} />
-        </CardContent>
-       </Card>
-      </Grid>
-      <Grid item xs={12} md={6}>
-       <Card variant='outlined' sx={{border: 0}}>
-        <CardContent>
-         <LinearDeterminate name='CSS' value={80} />
-         <LinearDeterminate name='React' value={85} />
-         <LinearDeterminate name='Node' value={80} />
-         <LinearDeterminate name='nestjs' value={70} />
-         <LinearDeterminate name='Qlik Mashup' value={85} />
-         <LinearDeterminate name='Qlik Webapp' value={85} />
-        </CardContent>
-       </Card>
-      </Grid>
+     <Grid sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', rowGap: 3, columnGap: 3}} spacing={3}>
+      {SkillsList.map((skill) => (
+       <Paper
+        elevation={2}
+        sx={{
+         p: 1,
+         minWidth: 150,
+         cursor: 'pointer',
+         minHeight: 100,
+         display: 'flex',
+         flexDirection: 'column',
+         justifyContent: 'space-evenly',
+         alignItems: 'center',
+         ':hover': {
+          backgroundColor: (theme) => theme.palette.primary.contrastText,
+         },
+        }}>
+        <Box>{skill.icon && <SvgIcon sx={{width: '2em', height: '2em'}} component={skill.icon} />}</Box>
+        <Typography variant='caption' fontSize={15}>
+         {skill.name}
+        </Typography>
+       </Paper>
+      ))}
      </Grid>
     </Paper>
    </Container>

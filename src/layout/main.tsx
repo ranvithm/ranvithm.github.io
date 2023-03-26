@@ -1,5 +1,5 @@
 import {Box, Container, Avatar, Button, IconButton, SvgIcon, styled} from '@mui/material'
-import './style.css'
+import '../style/style.css'
 
 const ImageButton = styled(IconButton)(({theme}) => ({
  backgroundColor: theme.palette.primary.contrastText,

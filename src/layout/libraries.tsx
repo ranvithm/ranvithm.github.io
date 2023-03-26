@@ -4,7 +4,7 @@ import CustomizedTimeline from '../components/timeline'
 
 const Library = () => {
  return (
-  <Box component='section' id='library' m='50px 0'>
+  <Box component='section' id='library' pt='65px'>
    <Container fixed>
     <Typography variant='h4' sx={{textAlign: 'center'}} gutterBottom>
      Libraries

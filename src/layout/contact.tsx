@@ -1,5 +1,5 @@
-import {Box, Container, Grid, Paper, Card, CardContent, Typography, TextField, Button, Snackbar} from '@mui/material'
 import {ChangeEvent, useState} from 'react'
+import {Box, Container, Grid, Paper, Card, CardContent, Typography, TextField, Button, Snackbar} from '@mui/material'
 
 interface IContactInfo {
  name?: string
@@ -43,7 +43,7 @@ const Contact = () => {
  }
 
  return (
-  <Box component='section' id='contact' m='50px 0'>
+  <Box component='section' id='contact' py='65px'>
    <Container fixed>
     <Paper
      sx={{

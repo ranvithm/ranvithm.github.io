@@ -4,7 +4,7 @@ import CustomizedTimeline from '../components/timeline'
 
 const Experience = () => {
  return (
-  <Box component='section' id='experience' m='50px 0'>
+  <Box component='section' id='experience' pt='65px'>
    <Container fixed>
     <Typography variant='h4' sx={{textAlign: 'center'}} gutterBottom>
      Experience & Project

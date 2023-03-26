@@ -2,7 +2,7 @@ import {Box, Container, Grid, Paper, Card, CardContent, Typography} from '@mui/m
 
 const About = () => {
  return (
-  <Box component='section' id='about' m='50px 0'>
+  <Box component='section' id='about' pt='65px'>
    <Container fixed>
     <Paper
      sx={{
