@@ -23,6 +23,7 @@ const Contact = () => {
  const submitFn = async () => {
   if (contact?.name && contact?.message && contact?.mailId && contact.mailId.match(validMail)) {
    await fetch('https://mail-ranjithm.vercel.app/sendmail', {
+    //    await fetch('http://localhost:5000/sendmail', {
     method: 'POST',
     headers: {
      'Content-Type': 'application/json',
