@@ -70,7 +70,7 @@ const Contact = () => {
           </Box>
           <Box display='flex' justifyContent='flex-end'>
            <Button disabled={!(contact?.name && contact?.message && contact?.mailId && contact.mailId.match(validMail))} onClick={submitFn} variant='contained'>
-            Contact
+            Reach me
            </Button>
           </Box>
          </Box>

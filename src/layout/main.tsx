@@ -51,7 +51,7 @@ const Main = () => {
      </Box>
      <Box display='flex' gap='20px' mt='10px'>
       <Button component='a' href='#contact' variant='contained'>
-       Hire me
+       Reach me
       </Button>
       <Button component='a' href='./Resume_Ranjithkumar.pdf' variant='contained'>
        Download CV
