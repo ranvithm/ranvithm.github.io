@@ -2,7 +2,7 @@
   "name": "profile",
   "private": true,
   "version": "2.0.1",
-  "homepage": "https://ranvithm.github.io/",
+  "homepage": "http://portfolio.ranjithm.in/",
   "type": "module",
   "scripts": {
     "dev": "vite",
