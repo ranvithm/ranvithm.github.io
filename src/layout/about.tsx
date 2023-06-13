@@ -19,7 +19,7 @@ const About = () => {
           About
          </Typography>
          <Typography variant='body1' color='text.secondary'>
-          I'm a full-stack developer with more than six years of experience, and I'm passionate about creating scalable, usable solutions that address challenging business issues.
+          I'm a full-stack developer with more than seven years of experience, and I'm passionate about creating scalable, usable solutions that address challenging business issues.
           I have experience with back-end technologies like Node.js, Express, and Nest.js as well as full-stack technologies like Next.js and Meteor. I also have experience with
           front-end technologies like HTML, CSS, JavaScript, React, and Angular. I also have expertise with web applications, mashups, and qlik sense extensions. Git and Jira are
           both familiar to me. Whether I'm developing a new feature, troubleshooting a problem, or cooperating with other team members, my primary goal is to produce high-quality
